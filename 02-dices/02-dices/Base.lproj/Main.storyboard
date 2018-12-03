@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_2_dices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="casinoback" translatesAutoresizingMaskIntoConstraints="NO" id="T8t-2y-9Lx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="7Sq-OA-KUL">
+                                <rect key="frame" x="97.5" y="298.5" width="180" height="70"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="CdF-lH-Cge">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="OmW-pe-eGm">
+                                        <rect key="frame" x="110" y="0.0" width="70" height="70"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="El señor del 3" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2w-Mj-2EN">
+                                <rect key="frame" x="71" y="103.5" width="233" height="45"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="31"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgI-qH-5fb">
+                                <rect key="frame" x="96" y="458.5" width="183" height="43"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="23"/>
+                                <state key="normal" title="Tirar los dados">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lFt-E7-rzz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezp-1c-OWM">
+                                <rect key="frame" x="159" y="561.5" width="57" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Normas"/>
+                                <connections>
+                                    <action selector="normasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsQ-uc-460"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XgI-qH-5fb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="08l-Zf-eNh"/>
+                            <constraint firstItem="ezp-1c-OWM" firstAttribute="top" secondItem="XgI-qH-5fb" secondAttribute="bottom" constant="60" id="3vE-46-CIW"/>
+                            <constraint firstItem="7Sq-OA-KUL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="A8N-XW-3Cf"/>
+                            <constraint firstItem="7Sq-OA-KUL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EWm-c9-nBR"/>
+                            <constraint firstItem="XgI-qH-5fb" firstAttribute="top" secondItem="7Sq-OA-KUL" secondAttribute="bottom" constant="90" id="HJa-6f-kRd"/>
+                            <constraint firstItem="T8t-2y-9Lx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Hb9-zO-lg2"/>
+                            <constraint firstItem="T8t-2y-9Lx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="O2g-tu-hdZ"/>
+                            <constraint firstItem="m2w-Mj-2EN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U7J-OJ-l2A"/>
+                            <constraint firstItem="T8t-2y-9Lx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jVo-4P-Fuf"/>
+                            <constraint firstItem="T8t-2y-9Lx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kE5-vB-BIQ"/>
+                            <constraint firstItem="7Sq-OA-KUL" firstAttribute="top" secondItem="m2w-Mj-2EN" secondAttribute="bottom" constant="150" id="tqC-m8-rNn"/>
+                            <constraint firstItem="ezp-1c-OWM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vW6-Ia-DA0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewDiceLeft" destination="CdF-lH-Cge" id="LdY-3E-rCF"/>
+                        <outlet property="imageViewDiceRight" destination="OmW-pe-eGm" id="O8q-8D-OsG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="158"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="casinoback" width="288" height="192"/>
+        <image name="dice1" width="70" height="70"/>
+    </resources>
+</document>
