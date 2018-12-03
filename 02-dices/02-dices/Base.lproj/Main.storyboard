@@ -32,12 +32,6 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="El señor del 3" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2w-Mj-2EN">
-                                <rect key="frame" x="71" y="103.5" width="233" height="45"/>
-                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="31"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgI-qH-5fb">
                                 <rect key="frame" x="96" y="458.5" width="183" height="43"/>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="23"/>
@@ -49,13 +43,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezp-1c-OWM">
-                                <rect key="frame" x="159" y="561.5" width="57" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="157.5" y="561.5" width="60" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <state key="normal" title="Normas"/>
                                 <connections>
                                     <action selector="normasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsQ-uc-460"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El señor del 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62d-I4-owY">
+                                <rect key="frame" x="68" y="121" width="239.5" height="42.5"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -66,10 +66,10 @@
                             <constraint firstItem="XgI-qH-5fb" firstAttribute="top" secondItem="7Sq-OA-KUL" secondAttribute="bottom" constant="90" id="HJa-6f-kRd"/>
                             <constraint firstItem="T8t-2y-9Lx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Hb9-zO-lg2"/>
                             <constraint firstItem="T8t-2y-9Lx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="O2g-tu-hdZ"/>
-                            <constraint firstItem="m2w-Mj-2EN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U7J-OJ-l2A"/>
+                            <constraint firstItem="7Sq-OA-KUL" firstAttribute="top" secondItem="62d-I4-owY" secondAttribute="bottom" constant="135" id="hbg-Zt-jXM"/>
                             <constraint firstItem="T8t-2y-9Lx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jVo-4P-Fuf"/>
                             <constraint firstItem="T8t-2y-9Lx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kE5-vB-BIQ"/>
-                            <constraint firstItem="7Sq-OA-KUL" firstAttribute="top" secondItem="m2w-Mj-2EN" secondAttribute="bottom" constant="150" id="tqC-m8-rNn"/>
+                            <constraint firstItem="62d-I4-owY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sQr-6i-N5W"/>
                             <constraint firstItem="ezp-1c-OWM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vW6-Ia-DA0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
