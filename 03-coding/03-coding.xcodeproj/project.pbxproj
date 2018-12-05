@@ -14,6 +14,7 @@
 		49F5EC8C21B6D26100B05C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F5EC8B21B6D26100B05C0B /* Assets.xcassets */; };
 		49F5EC8F21B6D26100B05C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F5EC8D21B6D26100B05C0B /* LaunchScreen.storyboard */; };
 		49F5EC9721B6D41700B05C0B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F5EC9621B6D41700B05C0B /* ThirdViewController.swift */; };
+		49F5EC9A21B8186800B05C0B /* FontDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F5EC9921B8186800B05C0B /* FontDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		49F5EC8B21B6D26100B05C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49F5EC8E21B6D26100B05C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49F5EC9021B6D26100B05C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49F5EC9621B6D41700B05C0B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		49F5EC9621B6D41700B05C0B /* ThirdViewController.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		49F5EC9921B8186800B05C0B /* FontDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				49F5EC8421B6D26000B05C0B /* FirstViewController.swift */,
 				49F5EC8621B6D26000B05C0B /* SecondViewController.swift */,
 				49F5EC9621B6D41700B05C0B /* ThirdViewController.swift */,
+				49F5EC9921B8186800B05C0B /* FontDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F5EC9A21B8186800B05C0B /* FontDetailViewController.swift in Sources */,
 				49F5EC8721B6D26000B05C0B /* SecondViewController.swift in Sources */,
 				49F5EC8321B6D26000B05C0B /* AppDelegate.swift in Sources */,
 				49F5EC9721B6D41700B05C0B /* ThirdViewController.swift in Sources */,
